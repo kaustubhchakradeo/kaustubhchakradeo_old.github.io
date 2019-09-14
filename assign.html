@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Delivery System
+        </title> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assign.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>                   
+        <div class="container">   
+                <div class="jumbotron">
+                        <h1>Delivery Agent Manager</h1> 
+                </div>           
+            <div class="row left">
+                <div class="col-lg-4">
+                    <h2>Available Personnel</h2>
+                    <hr>
+                    <div class="row row1">
+                        <div class="col-lg-1" >
+                            <p id="parent"> <i class="fas fa-male"></i>A</p> 
+                        </div>
+                        <div class="col-lg-1">
+                            <p id="parent"><i class="fas fa-male"> </i>B</p> 
+                        </div>
+                        <div class="col-lg-1">
+                            <p id="parent"><i class="fas fa-male"></i> C</p> 
+                        </div>
+                    </div>
+                    <div class="row row1">
+                        <div class="col-lg-1">
+                            <p id="parent"> <i class="fas fa-male"></i> D</p>                             
+                        </div>
+                        <div class="col-lg-1">
+                            <p id="parent"> <i class="fas fa-male"></i> E</p> 
+                        </div>
+                        <div class="col-lg-1">
+                            <p id="parent"> <i class="fas fa-male"></i> F</p> 
+                        </div>
+                    </div>
+                    <div class="row row1">
+                        <div class="col-lg-1">
+                            <p id="parent"> <i class="fas fa-male"></i> G</p> 
+                        </div>
+                        <div class="col-lg-1">
+                            <p id="parent"> <i class="fas fa-male"></i> H</p> 
+                        </div>
+                        <div class="col-lg-1">
+                            <p id="parent"> <i class="fas fa-male"></i> I</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                        
+                        <button type="button" class="btn btn-success" onclick="revoke()">Assign</button>
+                        <button type="button" class="btn btn-danger" onclick="assign()">Revoke</button>
+                </div>                
+                <div class="col-lg-4 right">
+                    <h2>Assigned Personnel</h2>
+                    <hr>
+                    <div class="row row1">
+                            <div class="col-lg-1" >
+                               <div id="child"></div>
+                            </div>
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                        </div>
+                        <div class="row row1">
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                        </div>
+                        <div class="row row1">
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                            <div class="col-lg-1">
+                                    <div id="child"></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>    
+        <script>  
+               
+               function revoke() { 
+                   
+                   $("#parent").prependTo($("#child")); 
+               } 
+               function assign() {                   
+                    if($("#parent").is(":empty")) {
+                        $("#parent").prependTo($("#child")); 
+                    }   
+                    $("#child").appendTo($("#parent"));                    
+               }
+               
+           </script> 
+        <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

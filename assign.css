@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1563455586-98caa7512fa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80);
+    background-size: cover;
+    background-position: center;
+    align-content: center;  
+}
+.jumbotron {
+    color: lightsalmon;
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    border: 0.5px solid black;
+}
+
+.col-lg-4 {
+    border: 2px solid black;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.col-lg-2 {
+    padding-top: 5cm;
+    padding-left: 2mm;
+}
+
+.left {
+    margin-left: 35mm;
+}
+
+
+.row1 {
+    padding-left: 100px;
+}
+
+i {
+    font-size: 5em;
+    font-weight: 500;
+}
+
+
